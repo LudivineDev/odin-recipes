@@ -1,9 +1,9 @@
 
 body {
     background: #eee;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
 }
-ul {
+#index-page {
     list-style-type: none; /* Removes bullet points */
     padding: 0px; /* Removes default padding */
     margin: 0; /* Removes default margin */
