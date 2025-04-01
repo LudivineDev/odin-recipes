@@ -1,0 +1,45 @@
+
+body {
+    background: #eee;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0px; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+.card {
+    width: 400px;
+    background: #fff;
+    margin: 16px auto;
+    border-radius: 8px;
+
+}
+
+.title {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 4px; /* Reduce this value to decrease space */
+}
+
+.recipe {
+    font-size: 20px;
+    background: #d6e2ea;
+    padding: 8px;
+    margin: 8px 16px;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 4px; /* Reduce this value to decrease space */
+}
+.recipe a {
+    display: block;  /* Makes the entire list item clickable */
+    padding: 8px;  /* Ensures the clickable area includes padding */
+    text-decoration: none; /* Optional: Removes underline */
+    color: inherit; /* Keeps the text color the same */
+}
+.recipe:last-child {
+    margin-bottom: 16px; /* Adjust this value for more space */
+}
