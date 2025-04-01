@@ -43,3 +43,13 @@ ul {
 .recipe:last-child {
     margin-bottom: 16px; /* Adjust this value for more space */
 }
+.home-button {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
