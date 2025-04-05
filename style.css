@@ -16,6 +16,7 @@ img {
     background: #fff;
     margin: 16px auto;
     border-radius: 8px;
+    padding-bottom: 4px;
 
 }
 
@@ -43,9 +44,7 @@ img {
     text-decoration: none; /* Optional: Removes underline */
     color: inherit; /* Keeps the text color the same */
 }
-.recipe:last-child {
-    margin-bottom: 16px; /* Adjust this value for more space */
-}
+
 .home-button {
     background: #007BFF;
     color: white;
