@@ -3,6 +3,9 @@ body {
     background: #eee;
     font-family: sans-serif;
 }
+img {
+    width: 300px;
+}
 #index-page {
     list-style-type: none; /* Removes bullet points */
     padding: 0px; /* Removes default padding */
