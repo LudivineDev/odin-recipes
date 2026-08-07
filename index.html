@@ -3,51 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Recipes Index</title>
+    <title>Odin Recipes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
+<header class="site">
+  <div class="site-inner">
+    <div class="wordmark-row">
+      <p class="wordmark">Odin <span>Recipes</span></p>
+      <p class="recipe-count mono" id="count-badge"></p>
+    </div>
+    <div class="search-wrap">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="search" type="text" placeholder="Search recipes…" autocomplete="off" aria-label="Search recipes">
+      <button id="clear-btn" aria-label="Clear search">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main>
+  <p class="status-line" id="status-line"></p>
+  <div class="grid" id="grid">
 
-        <div class="card">
-            <h1 class="title">Odin Recipes</h1> 
-            <ul id="index-page">
-                <li class="recipe"><a href="./recipes/pizza-dough.html" target="_blank" rel="noopener noreferrer">Pizza Dough</a></li>
+    <a class="card" href="./recipes/pizza-dough.html" data-title="Pizza Dough">
+      <div class="thumb" style="background:linear-gradient(135deg,#D9AE5C,#A9722E)"></div>
+      <div class="card-body">
+        <p class="card-title">Pizza Dough</p>
+        <div class="card-meta"><span class="mono">6 hr</span><span class="dot"></span><span>Bread &amp; Dough</span></div>
+      </div>
+    </a>
 
-                <li class="recipe"><a href="./recipes/pizza-sauce.html" target="_blank" rel="noopener noreferrer">Pizza Sauce</a></li>
+    <a class="card" href="./recipes/pizza-sauce.html" data-title="Pizza Sauce">
+      <div class="thumb" style="background:linear-gradient(135deg,#F4A261,#E4572E)"></div>
+      <div class="card-body">
+        <p class="card-title">Pizza Sauce</p>
+        <div class="card-meta"><span class="mono">20 min</span><span class="dot"></span><span>Sauce</span></div>
+      </div>
+    </a>
 
-                <li class="recipe"><a href="./recipes/matar-paneer.html" target="_blank" rel="noopener noreferrer">Matar Paneer</a></li>
+    <a class="card" href="./recipes/matar-paneer.html" data-title="Matar Paneer">
+      <div class="thumb" style="background:linear-gradient(135deg,#7FA37D,#3F5B3F)"></div>
+      <div class="card-body">
+        <p class="card-title">Matar Paneer</p>
+        <div class="card-meta"><span class="mono">30 min</span><span class="dot"></span><span>Main · Vegetarian</span></div>
+      </div>
+    </a>
 
-                <li class="recipe"><a href="./recipes/super-juice.html" target="_blank" rel="noopener noreferrer">Super Juice</a></li>
+    <a class="card" href="./recipes/super-juice.html" data-title="Super Juice">
+      <div class="thumb" style="background:linear-gradient(135deg,#C77DAB,#8C4C77)"></div>
+      <div class="card-body">
+        <p class="card-title">Super Juice</p>
+        <div class="card-meta"><span class="mono">15 min</span><span class="dot"></span><span>Bar prep</span></div>
+      </div>
+    </a>
 
-                <li class="recipe"><a href="./recipes/bourbon-cream.html" target="_blank" rel="noopener noreferrer">Bourbon Cream</a></li>
+    <a class="card" href="./recipes/bourbon-cream.html" data-title="Bourbon Cream">
+      <div class="thumb" style="background:linear-gradient(135deg,#C77DAB,#8C4C77)"></div>
+      <div class="card-body">
+        <p class="card-title">Bourbon Cream</p>
+        <div class="card-meta"><span class="mono">10 min</span><span class="dot"></span><span>Drink</span></div>
+      </div>
+    </a>
 
-                <li class="recipe"><a href="./recipes/cream-mushroom.html" target="_blank" rel="noopener noreferrer">Cream Mushroom Soup</a></li>
+    <a class="card" href="./recipes/cream-mushroom.html" data-title="Cream Mushroom Soup">
+      <div class="thumb" style="background:linear-gradient(135deg,#D9AE5C,#A9722E)"></div>
+      <div class="card-body">
+        <p class="card-title">Cream Mushroom Soup</p>
+        <div class="card-meta"><span class="mono">35 min</span><span class="dot"></span><span>Soup</span></div>
+      </div>
+    </a>
 
-                <li class="recipe"><a href="./recipes/chicken-liver.html" target="_blank" rel="noopener noreferrer">Chicken Liver Paté</a></li>
+    <a class="card" href="./recipes/chicken-liver.html" data-title="Chicken Liver Pat&#233;">
+      <div class="thumb" style="background:linear-gradient(135deg,#96685F,#5A332E)"></div>
+      <div class="card-body">
+        <p class="card-title">Chicken Liver Mousse</p>
+        <div class="card-meta"><span class="mono">45 min</span><span class="dot"></span><span>Appetizer</span></div>
+      </div>
+    </a>
 
-                <li class="recipe"><a href="./recipes/lobster-roll.html" target="_blank" rel="noopener noreferrer">Lobster Roll</a></li>
+    <a class="card" href="./recipes/lobster-roll.html" data-title="Lobster Roll">
+      <div class="thumb" style="background:linear-gradient(135deg,#6C90AC,#2E4A63)"></div>
+      <div class="card-body">
+        <p class="card-title">Lobster Roll</p>
+        <div class="card-meta"><span class="mono">20 min</span><span class="dot"></span><span>Main · Seafood</span></div>
+      </div>
+    </a>
 
-                <li class="recipe"><a href="./recipes/boulettes-de-viande.html" target="_blank" rel="noopener noreferrer">Boulettes de Viande</a></li>
+    <a class="card" href="./recipes/boulettes-de-viande.html" data-title="Boulettes de Viande">
+      <div class="thumb" style="background:linear-gradient(135deg,#96685F,#5A332E)">
+        <span class="flag">FR</span>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Boulettes de Viande</p>
+        <div class="card-meta"><span class="mono">45 min</span><span class="dot"></span><span>Main · Meat</span></div>
+      </div>
+    </a>
 
-                <li class="recipe"><a href="./recipes/pate-a-crepes.html" target="_blank" rel="noopener noreferrer">Pâte à Crêpes</a></li>
+    <a class="card" href="./recipes/pate-a-crepes.html" data-title="P&#226;te &#224; Cr&#234;pes">
+      <div class="thumb" style="background:linear-gradient(135deg,#D9AE5C,#A9722E)">
+        <span class="flag">FR</span>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Pâte à Crêpes</p>
+        <div class="card-meta"><span class="mono">5 min</span><span class="dot"></span><span>Breakfast</span></div>
+      </div>
+    </a>
 
-                <li class="recipe"><a href="./recipes/tapenade.html" target="_blank" rel="noopener noreferrer">Tapenade</a></li>
+    <a class="card" href="./recipes/tapenade.html" data-title="Tapenade">
+      <div class="thumb" style="background:linear-gradient(135deg,#7FA37D,#3F5B3F)">
+        <span class="flag">FR</span>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Tapenade</p>
+        <div class="card-meta"><span class="mono">10 min</span><span class="dot"></span><span>Appetizer · Sauce</span></div>
+      </div>
+    </a>
 
-                <li class="recipe"><a href="./recipes/hot-sour-soup.html" target="_blank" rel="noopener noreferrer">Hot and Sour Soup</a></li>
+    <a class="card" href="./recipes/hot-sour-soup.html" data-title="Hot and Sour Soup">
+      <div class="thumb" style="background:linear-gradient(135deg,#F4A261,#E4572E)"></div>
+      <div class="card-body">
+        <p class="card-title">Hot and Sour Soup</p>
+        <div class="card-meta"><span class="mono">25 min</span><span class="dot"></span><span>Soup</span></div>
+      </div>
+    </a>
 
-                <li class="recipe"><a href="./recipes/creme-fraiche.html" target="_blank" rel="noopener noreferrer">Crème Fraîche Maison</a></li>
+    <a class="card" href="./recipes/creme-fraiche.html" data-title="Cr&#232;me Fra&#238;che Maison">
+      <div class="thumb" style="background:linear-gradient(135deg,#D9AE5C,#A9722E)">
+        <span class="flag">FR</span>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Crème Fraîche Maison</p>
+        <div class="card-meta"><span class="mono">20 hr</span><span class="dot"></span><span>Pantry basic</span></div>
+      </div>
+    </a>
 
-                <li class="recipe"><a href="./recipes/sourdough-bread.html" target="_blank" rel="noopener noreferrer">Sourdough Bread</a></li>
+    <a class="card" href="./recipes/sourdough-bread.html" data-title="Sourdough Bread">
+      <div class="thumb" style="background:linear-gradient(135deg,#D9AE5C,#A9722E)"></div>
+      <div class="card-body">
+        <p class="card-title">Overnight Sourdough Bread</p>
+        <div class="card-meta"><span class="mono">18 hr</span><span class="dot"></span><span>Bread</span></div>
+      </div>
+    </a>
 
-                <li class="recipe"><a href="./recipes/gravlax.html" target="_blank" rel="noopener noreferrer">Gravlax Salmon</a></li>
+    <a class="card" href="./recipes/gravlax.html" data-title="Gravlax Salmon">
+      <div class="thumb" style="background:linear-gradient(135deg,#6C90AC,#2E4A63)"></div>
+      <div class="card-body">
+        <p class="card-title">Gravlax Salmon</p>
+        <div class="card-meta"><span class="mono">2 days</span><span class="dot"></span><span>Appetizer · Seafood</span></div>
+      </div>
+    </a>
 
-                <li class="recipe"><a href="./recipes/Poulet-farci.html" target="_blank" rel="noopener noreferrer">Volaille Farci</a></li>
+    <a class="card" href="./recipes/Poulet-farci.html" data-title="Volaille Farci">
+      <div class="thumb" style="background:linear-gradient(135deg,#96685F,#5A332E)">
+        <span class="flag">FR</span>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Volaille Farci</p>
+        <div class="card-meta"><span class="mono">2 hr</span><span class="dot"></span><span>Main · Poultry</span></div>
+      </div>
+    </a>
 
-                <li class="recipe"><a href="./recipes/vegetarian-lasagna.html" target="_blank" rel="noopener noreferrer">Vegetarian Lasagna</a></li>
+    <a class="card" href="./recipes/vegetarian-lasagna.html" data-title="Vegetarian Lasagna">
+      <div class="thumb" style="background:linear-gradient(135deg,#7FA37D,#3F5B3F)"></div>
+      <div class="card-body">
+        <p class="card-title">Vegetarian Lasagna</p>
+        <div class="card-meta"><span class="mono">1.5 hr</span><span class="dot"></span><span>Main · Vegetarian</span></div>
+      </div>
+    </a>
 
-                <li class="recipe"><a href="./recipes/boeuf-bourguignon.html" target="_blank" rel="noopener noreferrer">Boeuf Bourguignon</a></li>
-            </ul>
-        </div>
+    <a class="card" href="./recipes/boeuf-bourguignon.html" data-title="Boeuf Bourguignon">
+      <div class="thumb" style="background:linear-gradient(135deg,#96685F,#5A332E)">
+        <span class="flag">FR</span>
+      </div>
+      <div class="card-body">
+        <p class="card-title">Boeuf Bourguignon</p>
+        <div class="card-meta"><span class="mono">3.5 hr</span><span class="dot"></span><span>Main · Beef</span></div>
+      </div>
+    </a>
+
+  </div>
+</main>
+<footer class="site-footer">Odin Recipes</footer>
+<script src="search.js"></script>
 </body>
 </html>
