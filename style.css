@@ -88,9 +88,13 @@ main{max-width:1080px; margin:0 auto; padding:22px 20px 60px;}
 .ing-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px;}
 .ing-list li{font-size:14.5px; padding:9px 10px; border-radius:10px; background:var(--surface-2);}
 .step-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px; counter-reset:step;}
-.step-list li{display:flex; gap:12px; font-size:14.5px; line-height:1.5; counter-increment:step;}
+.step-list li{
+  position:relative; padding-left:36px;
+  font-size:14.5px; line-height:1.5; counter-increment:step;
+}
 .step-list li::before{
-  content:counter(step); flex:none; width:24px; height:24px; border-radius:50%;
+  content:counter(step); position:absolute; left:0; top:0;
+  width:24px; height:24px; border-radius:50%;
   background:var(--accent-soft); color:var(--accent); font-size:12px; font-weight:800;
   display:flex; align-items:center; justify-content:center;
   font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
